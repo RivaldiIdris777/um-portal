@@ -1,3 +1,7 @@
+@php
+use App\Models\HasilCBT;
+$cbt = HasilCBT::all();
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,7 +69,13 @@
                             <li><a href="{{ url('home/syaratpendaftaran') }}">Syarat Pendaftaran</a></li>
                             <li><a href="{{ url('home/brosur') }}">Download Brosur</a></li>
                             <li><a href="{{ url('home/panduanpendaftaran') }}">Panduan Penfaftaran</a></li>
-                            <li><a href="{{ url('home/hasilcbt') }}">Hasil CBT</a></li>
+                            <li class="dropdown"><a href="#">Hasil CBT</a>
+								<ul>
+                                    @foreach ( $cbt as $ct )
+                                        <li><a href="{{ url('home/hasilcbt', $ct->id) }}">{{ $ct->judul }}</a></li>
+                                    @endforeach
+								</ul>
+							</li>
                         </ul>
                     </li>
                     <li><a href="{{ url('home/fakultas') }}">Fakultas</a></li>

@@ -1,3 +1,7 @@
+<?php
+use App\Models\HasilCBT;
+$cbt = HasilCBT::all();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,7 +69,13 @@
                             <li><a href="<?php echo e(url('home/syaratpendaftaran')); ?>">Syarat Pendaftaran</a></li>
                             <li><a href="<?php echo e(url('home/brosur')); ?>">Download Brosur</a></li>
                             <li><a href="<?php echo e(url('home/panduanpendaftaran')); ?>">Panduan Penfaftaran</a></li>
-                            <li><a href="<?php echo e(url('home/hasilcbt')); ?>">Hasil CBT</a></li>
+                            <li class="dropdown"><a href="#">Hasil CBT</a>
+								<ul>
+                                    <?php $__currentLoopData = $cbt; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $ct): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <li><a href="<?php echo e(url('home/hasilcbt', $ct->id)); ?>"><?php echo e($ct->judul); ?></a></li>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+								</ul>
+							</li>
                         </ul>
                     </li>
                     <li><a href="<?php echo e(url('home/fakultas')); ?>">Fakultas</a></li>

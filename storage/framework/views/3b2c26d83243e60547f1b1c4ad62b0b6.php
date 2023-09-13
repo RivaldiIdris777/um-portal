@@ -16,18 +16,14 @@
         <div class="container" data-aos="fade-up">
 
             <div class="row mt-3">
-                <?php $__empty_1 = true; $__currentLoopData = $hasilcbt; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dt): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="mb-3"><?php echo e($dt->judul); ?></h4>
-                        <object data="/assets/hasilcbt/<?php echo e($dt->file); ?>" type="application/pdf"
+                        <h4 class="mb-3"><?php echo e($cbt->judul); ?></h4>
+                        <object data="/assets/hasilcbt/<?php echo e($cbt->file); ?>" type="application/pdf"
                             width="100%" height="500px">
                         </object>
                     </div>
                 </div>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-
-                <?php endif; ?>
             </div>
         </div>
 

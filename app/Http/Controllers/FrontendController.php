@@ -44,7 +44,7 @@ class FrontendController extends Controller
             'jadwalpendaftaran' => $jadwalpendaftaran,
             'fasilitas'         => $fasilitas,
             'lulusan' => $lulusan,
-            'link' => $link
+            'link' => $link,
         ]);
     }
 
@@ -96,11 +96,11 @@ class FrontendController extends Controller
         ]);
     }
 
-    public function hasilcbt()
+    public function hasilcbt($id)
     {
-        $hasilcbt = HasilCBT::all();
+        $cbt = HasilCBT::where('id', $id)->first();
         return view('user.hasilcbt.index', [
-            'hasilcbt' => $hasilcbt,
+            'cbt' => $cbt,
         ]);
     }
 

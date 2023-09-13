@@ -61,7 +61,7 @@ Route::get('home/biayaperkuliahan', [FrontendController::class, 'biayaperkuliaha
 Route::get('home/syaratpendaftaran', [FrontendController::class, 'syaratpendaftaran'])->name('syaratpendaftaran.user');
 Route::get('home/brosur', [FrontendController::class, 'brosur'])->name('brosur.user');
 Route::get('home/panduanpendaftaran', [FrontendController::class, 'panduanpendaftaran'])->name('panduanpendaftaran.user');
-Route::get('home/hasilcbt', [FrontendController::class, 'hasilcbt'])->name('hasilcbt.user');
+Route::get('home/hasilcbt/{id}', [FrontendController::class, 'hasilcbt'])->name('hasilcbt.user');
 Route::get('home/fakultas', [FrontendController::class, 'fakultas'])->name('fakultas.user');
 Route::get('home/kontak', [FrontendController::class, 'kontak'])->name('kontak.user');
 Route::get('home/pascasarjana', [FrontendController::class, 'pascasarjana'])->name('pascasarjana.user');
