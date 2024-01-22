@@ -20,6 +20,9 @@ use App\Http\Controllers\HasilCBTController;
 use App\Http\Controllers\PascaSarjanaController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\LinkDaftarController;
+use App\Http\Controllers\RplSliderController;
+use App\Http\Controllers\RPLBiayaPendaftaranController;
+use App\Http\Controllers\RPLBiayaPerkuliahanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,6 +55,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('pascasarjana', PascaSarjanaController::class);
     Route::resource('slider', SliderController::class);
     Route::resource('linkdaftar', LinkDaftarController::class);
+    Route::resource('rplgambar', RPLSliderController::class);
+    Route::resource('rplbiayapendaftaran', RPLBiayaPendaftaranController::class);
+    Route::resource('rplbiayaperkuliahan', RPLBiayaPerkuliahanController::class);
 });
 
 Route::get('/', [FrontendController::class, 'home'])->name('home');
@@ -65,6 +71,7 @@ Route::get('home/hasilcbt/{id}', [FrontendController::class, 'hasilcbt'])->name(
 Route::get('home/fakultas', [FrontendController::class, 'fakultas'])->name('fakultas.user');
 Route::get('home/kontak', [FrontendController::class, 'kontak'])->name('kontak.user');
 Route::get('home/pascasarjana', [FrontendController::class, 'pascasarjana'])->name('pascasarjana.user');
+Route::get('home/rpl', [FrontendController::class, 'rpl'])->name('rpl.user');
 
 require __DIR__.'/auth.php';
 

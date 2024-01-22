@@ -22,11 +22,11 @@
                                 <?php $__empty_1 = true; $__currentLoopData = $biaya; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $by): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                                 <tbody>
                                     <tr>
-                                        <td><p class="fw-bold">Biaya Pendaftaran Pagi</p></td>
+                                        <td><p class="fw-bold">Biaya Reguler A</p></td>
                                         <td>Rp. <?php echo e(format_uang($by->pagi)); ?></td>
                                     </tr>
                                     <tr>
-                                        <td><p class="fw-bold">Biaya Pendaftaran Malam</p></td>
+                                        <td><p class="fw-bold">Biaya Reguler B</p></td>
                                         <td>Rp. <?php echo e(format_uang($by->malam)); ?></td>
                                     </tr>
                                     <tr>

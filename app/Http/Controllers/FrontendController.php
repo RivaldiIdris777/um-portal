@@ -19,6 +19,9 @@ use App\Models\Prodi;
 use App\Models\Fakultas;
 use App\Models\Akreditasi;
 use App\Models\PascaSarjana;
+use App\Models\RPLBiayaPendaftaran;
+use App\Models\RPLBiayaPerkuliahan;
+use App\Models\RPLSlider;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
@@ -129,6 +132,18 @@ class FrontendController extends Controller
         return view('user.pascasarjana.index', [
             'pasca' => $pasca,
             'link' => $link
+        ]);
+    }
+
+    public function rpl()
+    {
+        $biayapendaftaran = RPLBiayaPendaftaran::all();
+        $biayaperkuliahan = RPLBiayaPerkuliahan::all();
+        $slider = RPLSlider::all();
+        return view('user.rpl.index', [
+            'slider'        => $slider,
+            'biayapendaftaran' => $biayapendaftaran,
+            'biayaperkuliahan' => $biayaperkuliahan,
         ]);
     }
 }

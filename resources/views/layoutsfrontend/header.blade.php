@@ -61,6 +61,7 @@ $cbt = HasilCBT::all();
                     <li><a class="active" href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('home/alurpendaftaran') }}">Alur Pendaftaran</a></li>
                     <li><a href="{{ url('home/pascasarjana') }}">Pascasarjana</a></li>
+                    <li><a href="{{ url('home/rpl') }}">RPL &nbsp;<span></span><small class="text-danger fst-italic"> Baru</small></a></li>
                     <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
 
@@ -98,7 +99,6 @@ $cbt = HasilCBT::all();
             </ul>
           </li> -->
                     <li><a href="{{ url('home/kontak') }}">Kontak</a></li>
-                    <li><a href="#">Data</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

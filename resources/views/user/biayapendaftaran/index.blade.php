@@ -23,11 +23,11 @@
                                 @forelse ( $biaya as $by )
                                 <tbody>
                                     <tr>
-                                        <td><p class="fw-bold">Biaya Pendaftaran Pagi</p></td>
+                                        <td><p class="fw-bold">Biaya Reguler A</p></td>
                                         <td>Rp. {{ format_uang($by->pagi) }}</td>
                                     </tr>
                                     <tr>
-                                        <td><p class="fw-bold">Biaya Pendaftaran Malam</p></td>
+                                        <td><p class="fw-bold">Biaya Reguler B</p></td>
                                         <td>Rp. {{ format_uang($by->malam) }}</td>
                                     </tr>
                                     <tr>

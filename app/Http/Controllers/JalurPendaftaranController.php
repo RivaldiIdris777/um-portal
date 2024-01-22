@@ -103,7 +103,7 @@ class JalurPendaftaranController extends Controller
         $data->delete();
 
         if($data) {
-            return redirect()->route('alurpendaftaran.index')->with('success', 'Berhasil hapus info jalur pendaftaran');
+            return redirect()->route('jalurpendaftaran.index')->with('success', 'Berhasil hapus info jalur pendaftaran');
         }else {
             return redirect()->back()->with('warning', 'Gagal menghapus info jalur pendaftaran');
         }

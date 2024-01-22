@@ -21,7 +21,7 @@
                         <h4>Data {{ $dt->judul }}</h4>
                     </div>
                     <div class="p-2">
-                        <form action="{{ route('alurpendaftaran.destroy', $dt->id)  }}" method="POST">
+                        <form action="{{ route('jalurpendaftaran.destroy', $dt->id)  }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Hapus Data</button>

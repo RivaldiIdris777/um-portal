@@ -20,7 +20,7 @@
                         <h4>Data <?php echo e($dt->judul); ?></h4>
                     </div>
                     <div class="p-2">
-                        <form action="<?php echo e(route('alurpendaftaran.destroy', $dt->id)); ?>" method="POST">
+                        <form action="<?php echo e(route('jalurpendaftaran.destroy', $dt->id)); ?>" method="POST">
                             <?php echo csrf_field(); ?>
                             <?php echo method_field('DELETE'); ?>
                             <button type="submit" class="btn btn-danger">Hapus Data</button>

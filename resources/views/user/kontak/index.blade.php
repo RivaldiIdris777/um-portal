@@ -53,7 +53,7 @@
                 <div class="col-lg-8 mt-5 mt-lg-0">
 
                     <div class="card-img">
-                        <img src="{{ Storage::url('public/kontak/').$kt->gambar }}" alt="...">
+                        {{-- <img src="{{ Storage::url('public/kontak/').$kt->gambar }}" alt="..."> --}}
                     </div>
 
                 </div>

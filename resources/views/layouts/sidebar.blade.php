@@ -50,7 +50,7 @@
                 <div class="menu-title">Alur Pendaftaran</div>
             </a>
             <ul>
-                <li> <a href="{{ route('alurpendaftaran.index') }}"><i class="bx bx-right-arrow-alt"></i>Sarjana/Pasca Sarjana</a>
+                <li> <a href="{{ route('alurpendaftaran.index') }}"><i class="bx bx-right-arrow-alt"></i>Sarjana/Pascasarjana</a>
                 </li>
                 {{-- <li> <a href=""><i class="bx bx-right-arrow-alt"></i>Pasca Sarjana</a>
                 </li> --}}
@@ -67,8 +67,25 @@
             <a href="{{ url('pascasarjana') }}">
                 <div class="parent-icon"><i class='lni lni-graduation'></i>
                 </div>
-                <div class="menu-title">Pasca Sarjana</div>
+                <div class="menu-title">Pascasarjana</div>
             </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class='bx bx-home-alt'></i>
+                </div>
+                <div class="menu-title">RPL</div>
+            </a>
+            <ul>
+                <li> <a href="{{ url('rplgambar')}}"><i class="bx bx-right-arrow-alt"></i>Alur Pendaftaran Slider/Gambar</a>
+                </li>
+                <li> <a href="{{ url('rplbiayapendaftaran')}}"><i class="bx bx-right-arrow-alt"></i>Biaya Pendaftaran</a>
+                </li>
+                <li> <a href="{{ url('rplbiayaperkuliahan')}}"><i class="bx bx-right-arrow-alt"></i>Biaya Perkuliahan</a>
+                </li>
+                <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Timeline Pendaftaran</a>
+                </li>
+            </ul>
         </li>
         <li>
             <a href="javascript:;" class="has-arrow">

@@ -9,7 +9,11 @@
                     <div class="form-group">
                         <div class="mb-3">
                             <label class="form-label">Judul</label>
-                            <input name="judul" type="text" class="form-control">
+                            <select name="judul" id="" class="form-control">
+                                <option value="Jalur pendaftaran">Jalur Pendaftaran</option>
+                                <option value="Jadwal Pendaftaran">Jadwal Pendaftaran</option>
+                                <option value="Fasilitas">Fasilitas</option>
+                            </select>
                             <?php if($errors->has('judul')): ?>
                             <div class="text-danger">
                                 <?php echo e($errors->first('judul')); ?>
