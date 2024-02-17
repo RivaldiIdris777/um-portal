@@ -98,6 +98,7 @@ class JalurPendaftaranController extends Controller
     {
         $data = JalurPendaftaran::where('id', $id)->first();
 
+        // Update kesalahan
         Storage::disk('local')->delete('public/jalur_pendaftaran/'.$data->gambar);
 
         $data->delete();
