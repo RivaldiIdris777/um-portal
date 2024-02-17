@@ -20,7 +20,7 @@
         </li>
         <li class="menu-label">Pilihan Halaman</li>
         <li>
-            <a href="javascript:;" class="has-arrow">
+            <a href="javascript:" class="has-arrow">
                 <div class="parent-icon"><i class='bx bx-home-alt'></i>
                 </div>
                 <div class="menu-title">Home</div>
