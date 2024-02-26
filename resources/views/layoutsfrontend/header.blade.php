@@ -1,6 +1,8 @@
 @php
 use App\Models\HasilCBT;
+use App\Models\LinkDaftar;
 $cbt = HasilCBT::all();
+$link = LinkDaftar::where('tujuan_url','like',"%Sarjana%")->first();
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +66,6 @@ $cbt = HasilCBT::all();
                     <li><a href="{{ url('home/rpl') }}">RPL &nbsp;<span></span><small class="text-danger fst-italic"> Baru</small></a></li>
                     <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-
                             <li><a href="{{ url('home/biayapendaftaran') }}">Biaya Pendaftaran</a></li>
                             <li><a href="{{ url('home/biayaperkuliahan') }}">Biaya Perkuliahan</a></li>
                             <li><a href="{{ url('home/syaratpendaftaran') }}">Syarat Pendaftaran</a></li>
@@ -103,7 +104,7 @@ $cbt = HasilCBT::all();
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
-            <a href="https://registrasi.umjambi.ac.id/" class="get-started-btn">Daftar</a>
+            <a href="{{ $link->url }}" class="get-started-btn">Daftar</a>
 
         </div>
     </header><!-- End Header -->

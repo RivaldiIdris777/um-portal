@@ -102,7 +102,7 @@
                 <p>Lulusan</p>
             </div>
             <div class="row" data-aos="zoom-in" data-aos-delay="100">
-                <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="col-lg-4 d-flex align-items-stretch mb-3">
                     <div class="content">
                         <h3>Kenapa Memilih UM Jambi?</h3>
                         <p>
@@ -116,7 +116,7 @@
                 </div>
 
                 <?php $__empty_1 = true; $__currentLoopData = $lulusan; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lu): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-3">
                     <div class="member">
                         <img src="<?php echo e(Storage::url('public/profil_lulusan/').$lu->gambar); ?>" class="img-fluid" alt="...">
                     </div>
