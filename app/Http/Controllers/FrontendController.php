@@ -18,6 +18,7 @@ use App\Models\ProfilLulusan;
 use App\Models\Prodi;
 use App\Models\Fakultas;
 use App\Models\Akreditasi;
+use App\Models\Slider;
 use App\Models\PascaSarjana;
 use App\Models\RPLBiayaPendaftaran;
 use App\Models\RPLBiayaPerkuliahan;
@@ -39,6 +40,7 @@ class FrontendController extends Controller
         $jadwalpendaftaran = JalurPendaftaran::where('judul','like',"%Jadwal Pendaftaran%")->first();
         $fasilitas = JalurPendaftaran::where('judul','like',"%Fasilitas%")->get();
         $link = LinkDaftar::where('tujuan_url','like',"%Sarjana%")->first();
+        $slider = Slider::where('tujuanslider','like',"%Sarjana%")->first();
         $lulusan = ProfilLulusan::all();
         return view('user.home.index', [
             'akreditasi' => $akreditasi,
@@ -48,6 +50,7 @@ class FrontendController extends Controller
             'fasilitas'         => $fasilitas,
             'lulusan' => $lulusan,
             'link' => $link,
+            'slider' => $slider,
         ]);
     }
 
@@ -129,9 +132,11 @@ class FrontendController extends Controller
     {
         $pasca = PascaSarjana::orderBy('id', 'DESC')->get();
         $link = LinkDaftar::where('tujuan_url','like',"%Sarjana%")->first();
+        $slider = Slider::where('tujuanslider','like',"%Sarjana%")->first();
         return view('user.pascasarjana.index', [
             'pasca' => $pasca,
-            'link' => $link
+            'link' => $link,
+            'slider' => $slider
         ]);
     }
 

@@ -90,7 +90,7 @@
 @extends('layoutsfrontend.app')
 @section('contentfrontend')
 <!-- ======= Hero Section ======= -->
-<section id="heropascasarjana" class="d-flex justify-content-center align-items-center">
+<section id="hero" class="d-flex justify-content-center align-items-center" style="background: url('{{ Storage::url('public/slider/').$slider->gambar }}') top center; background-size: cover; max-width:100%;">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
         <h1>PASCASARJANA<br><span style="color:red;"> Fakultas Ekonomi dan Bisnis</span></h1>
         <h2>Program Studi Ekonomi Pembangunan</h2>

@@ -277,10 +277,10 @@
                 <h2 style="font-weight: 600">Biaya Pendaftaran</h2>
                 <br>
                 <table class="table table-bordered text-center" style="font-size: 30px; table-layout: fixed;">
-                    <thead style="background-color:#06A251;">
+                    <thead style="background-color:#800000;">
                         <tr>
-                            <th class="text-white" style="background-color:#06A251;">Program</th>
-                            <th class="text-white" style="background-color:#06A251;">Besaran Biaya Pendaftaran</th>
+                            <th class="text-white" style="background-color:#800000;">Program</th>
+                            <th class="text-white" style="background-color:#800000;">Besaran Biaya Pendaftaran</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -299,9 +299,9 @@
                     <table class="table table-bordered text-center" style="font-size: 30px; table-layout: fixed;">
                         <thead>
                             <tr>
-                                <th class="text-white" style="background-color:#06A251;">Program</th>
-                                <th class="text-white" style="background-color:#06A251;">Besaran Biaya Pendaftaran</th>
-                                <th class="text-white" style="background-color:#06A251;">Biaya Rekognisi / SKS</th>
+                                <th class="text-white" style="background-color:#800000;">Program</th>
+                                <th class="text-white" style="background-color:#800000;">Besaran Biaya Pendidikan</th>
+                                <th class="text-white" style="background-color:#800000;">Biaya Rekognisi / SKS</th>
                             </tr>
                         </thead>
                         <tbody>

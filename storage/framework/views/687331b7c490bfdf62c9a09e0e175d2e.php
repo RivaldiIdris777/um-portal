@@ -1,6 +1,6 @@
 <?php $__env->startSection('contentfrontend'); ?>
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex justify-content-center align-items-center">
+<section id="hero" class="d-flex justify-content-center align-items-center" style="background: url('<?php echo e(Storage::url('public/slider/').$slider->gambar); ?>') top center; background-size: cover; max-width:100%;">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
         <h1>Berprestasi<br><span style="color:red;"> Bersama UM Jambi</span></h1>
         <h2>Terakreditasi Baik Sekali</h2>
@@ -77,17 +77,29 @@
     <section id="about" class="about">
         <div class="container">
 
-            <div class="row">
-                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-right" data-aos-delay="100">
-                    <img src="<?php echo e(Storage::url('public/jalur_pendaftaran/').$jadwalpendaftaran->gambar); ?>" class="img-fluid" alt="">
-                    <img src="<?php echo e(Storage::url('public/jalur_pendaftaran/').$fasilitas[0]->gambar); ?>" class="img-fluid" alt="">
+            <div class="row" data-aos="fade-up">
+                <div class="section-title">
+                    <p style="color:#800000">Kelebihan Universitas Muhammadiyah Jambi</p>
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                    <h3>Jalur Pendaftaran </h3>
-                    <p class="fst-justify">
-                        <img src="<?php echo e(Storage::url('public/jalur_pendaftaran/').$jalurpendaftaran->gambar); ?>" class="img-fluid" alt="">
-                    </p>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-3">
+                    <div class="member">
+                        <img src="<?php echo e(Storage::url('public/jalur_pendaftaran/').$jadwalpendaftaran->gambar); ?>" class="img-fluid rounded-3" alt="...">
+                    </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-3">
+                    <div class="member">
+                        <img src="<?php echo e(Storage::url('public/jalur_pendaftaran/').$fasilitas[0]->gambar); ?>" class="img-fluid rounded-3" alt="...">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-3">
+                    <div class="member">
+                        <img src="<?php echo e(Storage::url('public/jalur_pendaftaran/').$jalurpendaftaran->gambar); ?>" class="img-fluid rounded-3" alt="...">
+                    </div>
+                </div>
+
+                
             </div>
 
         </div>

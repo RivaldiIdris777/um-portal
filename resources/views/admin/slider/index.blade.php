@@ -32,7 +32,7 @@
             <div class="card-body">
                 <div>
                 </div>
-                <img src="{{ Storage::url('public/rplgambar/').$dt->gambar }}" alt="" width="1000" height="900">
+                <img src="{{ Storage::url('public/slider/').$dt->gambar }}" alt="" width="1000" height="900">
                 <table class="table table-striped no-margin mt-3">
                     <tbody>
                         <tr>

@@ -55,8 +55,7 @@ $link = LinkDaftar::where('tujuan_url','like',"%Sarjana%")->first();
 
             <!-- <h1 class="logo me-auto"><a href="index.html">UM Jambi</a></h1> -->
             <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="#" class="logo me-auto"><img src="<?php echo e(asset('')); ?>frontend/img/logo-um-png.png" alt=""
-                    class="img-fluid"></a>
+            <a href="#" class="logo me-auto"><img src="<?php echo e(asset('')); ?>frontend/img/logo-um.png" alt=""></a>
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
