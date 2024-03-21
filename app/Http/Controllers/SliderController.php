@@ -107,7 +107,7 @@ class SliderController extends Controller
         $data->delete();
 
         if($data) {
-            return redirect()->route('brosur.index')->with('success', 'Berhasil hapus data slider');
+            return redirect()->route('slider.index')->with('success', 'Berhasil hapus data slider');
         }else {
             return redirect()->back()->with('warning', 'Gagal menghapus data slider');
         }

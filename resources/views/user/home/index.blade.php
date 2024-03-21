@@ -74,12 +74,12 @@
 
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about-kelebihan" class="about">
         <div class="container">
 
             <div class="row" data-aos="fade-up">
                 <div class="section-title">
-                    <p style="color:#800000">Kelebihan Universitas Muhammadiyah Jambi</p>
+                    <p style="color:#fff">Kelebihan Universitas Muhammadiyah Jambi</p>
                 </div>
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-3">
                     <div class="member">

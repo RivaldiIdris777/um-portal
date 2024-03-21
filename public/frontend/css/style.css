@@ -368,13 +368,14 @@ h6 {
 
 .navbar-mobile .dropdown ul {
   position: static;
+  color:#fff;
   display: none;
   margin: 10px 20px;
   padding: 10px 0;
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #800000;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -384,6 +385,7 @@ h6 {
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
+  color:#fff;
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -393,7 +395,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #5fcf80;
+    color: #37423b;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -420,7 +422,7 @@ h6 {
 }
 
 #hero .container {
-  padding-top: 72px;
+  padding-top: 10px;
 }
 
 
@@ -564,6 +566,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+#about-kelebihan{
+    background: rgb(178,7,7);
+    background: linear-gradient(90deg, rgba(178,7,7,1) 0%, rgba(128,0,0,1) 100%);
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;

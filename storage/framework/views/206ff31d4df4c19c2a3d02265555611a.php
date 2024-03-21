@@ -20,7 +20,7 @@
                         <h4>Data Slide Untuk <?php echo e($dt->judul); ?></h4>
                     </div>
                     <div class="p-2">
-                        <form action="<?php echo e(route('brosur.destroy', $dt->id)); ?>" method="POST">
+                        <form action="<?php echo e(route('slider.destroy', $dt->id)); ?>" method="POST">
                             <?php echo csrf_field(); ?>
                             <?php echo method_field('DELETE'); ?>
                             <button type="submit" class="btn btn-danger">Hapus Data</button>
