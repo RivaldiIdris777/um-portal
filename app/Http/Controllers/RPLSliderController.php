@@ -93,6 +93,7 @@ class RPLSliderController extends Controller
      */
     public function update(Request $request, string $id)
     {
+
         $message = [
             'judul' => [
                 'required' => 'isi judul dari informasi gambar alur pendaftaran',
@@ -107,16 +108,14 @@ class RPLSliderController extends Controller
 
         ];
 
-        $this->validate($request, [
-            'judul'  => 'required',
-            'gambar'  => 'required|mimes:jpg,jpeg,png',
-            'keterangan' => 'required'
-        ], $message);
-
-
         $data = RPLSlider::where('id', $id)->first();
 
         if($request->file('gambar') == "") {
+
+            $this->validate($request, [
+                'judul'  => 'required',
+                'keterangan' => 'required'
+            ], $message);
 
             $data->update([
                 'judul'     => $request->judul,
@@ -125,19 +124,25 @@ class RPLSliderController extends Controller
 
         } else {
 
+            $this->validate($request, [
+                'judul'  => 'required',
+                'gambar'  => 'required|mimes:jpg,jpeg,png',
+                'keterangan' => 'required'
+            ], $message);
+
             Storage::disk('local')->delete('public/rplgambar/'.$data->gambar);
 
             $image = $request->file('gambar');
             $image->storeAs('public/rplgambar', $image->hashName());
 
-            $simpan = DB::table('tb_rplslider')->update([
+            $data = DB::table('tb_rplslider')->update([
                 'judul'     => $request->judul,
                 'gambar'     => $image->hashName(),
                 'keterangan' => $request->keterangan
             ]);
         }
 
-        if ($simpan) {
+        if ($data) {
             return redirect()->route('rplgambar.index')->with('success', 'Berhasil menyimpan gambar ');
         }else {
             return redirect()->back()->with('warning', 'Gagal menyimpan data pascasarjana');

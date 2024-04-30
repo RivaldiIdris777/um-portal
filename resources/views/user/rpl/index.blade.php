@@ -2,10 +2,12 @@
 <style>
     #heropascasarjana {
         width: 100%;
-        height: 80vh;
+        height: 45em;
         background: url("{{ asset('') }}rpl-slider2.png") top center;
-        background-size: cover;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
         position: relative;
+        margin-top: 0;
     }
 
 
@@ -94,7 +96,7 @@
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
         <div class="container">
-            <h2 class="text-center">Update Formulir </h2>
+            <h2 class="text-center">Pengumuman Terbaru</h2>
 
         </div>
     </div><!-- End Breadcrumbs -->
@@ -131,10 +133,10 @@
                         <br><br><br>
                         <div class="row justify-content-center">
                             @foreach ($dokumen as $dt)
-                                <div class="col-md-3">
+                                <div class="col-md-6">
                                     <a href="{{ asset('') }}pdf/UU-Nomor-12-Tahun-2012.pdf">
                                         <div class="card-body text-center">
-                                            <iframe src="/assets/rpldokumen/{{ $dt->file }}" type="application/pdf"></iframe>
+                                            <iframe src="/assets/rpldokumen/{{ $dt->file }}" type="application/pdf" style="height:50vh"></iframe>
                                             <br><br>
                                             <h4 style="color:#800000">{{ $dt->judul }}</h4>
                                         </div>
@@ -261,7 +263,7 @@
                 <div class="carousel-inner">
                     @foreach ( $slider as $data)
                     <div class="carousel-item active">
-                        <img src="{{ Storage::url('public/rplgambar/').$data->gambar }}" class="d-block w-100" alt="...">
+                        <img src="{{ Storage::url('public/rplgambar/').$data->gambar }}" class="d-block w-100" alt="..." style="object-fit:fill">
                     </div>
                     @endforeach
                 </div>
