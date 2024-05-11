@@ -31,12 +31,8 @@
                                         <td>Rp. {{ format_uang($by->malam) }}</td>
                                     </tr>
                                     <tr>
-                                        <td><p class="fw-bold">Transfer Melalui</p></td>
-                                        <td>{{ $by->nama_rekening }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td><p class="fw-bold">Nomor Rekening</p></td>
-                                        <td>{{ $by->nomor_rekening }}</td>
+                                        <td><p class="fw-bold">Pembayaran Melalui</p></td>
+                                        <td>Biaya Pendaftaran Langsung Melalui Sipenmaru di Link Berikut <br><a href="https://sipenmaru.umjambi.ac.id/">Masuk Disini</a></td>
                                     </tr>
                                     <tr>
                                         <td><p class="fw-bold">Atas Nama Rekening</p></td>
