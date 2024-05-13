@@ -106,10 +106,16 @@
 
             <div class="row mt-5">
                 <div class="card">
-                    <div class="card-body text-center">
+                    @forelse ( $sliderbrosur as $data)
+                    <div class="card-body text-center m-20">
                         <br>
-                        <img src="{{ asset('') }}rpl_data/brosur2024.png" class="img-fluid" alt="" id="rplbrosur">
+                        <img src="{{ Storage::url('public/rplgambar/').$data->gambar }}" class="img-fluid" alt="" id="rplbrosur">
                     </div>
+                    @empty
+                    <div class="card-body text-center m-20">
+                        <br>
+                        <h3>Belum ada gambar yang dimuat</h3>
+                    @endforelse
                 </div>
             </div>
         </div>
@@ -136,7 +142,7 @@
                                 <div class="col-md-6">
                                     <a href="{{ asset('') }}pdf/UU-Nomor-12-Tahun-2012.pdf">
                                         <div class="card-body text-center">
-                                            <iframe src="/assets/rpldokumen/{{ $dt->file }}" type="application/pdf" style="height:50vh"></iframe>
+                                            <iframe class="col-lg-6 col-md-6 col-sm-6" src="/assets/rpldokumen/{{ $dt->file }}" type="application/pdf" style="height:50vh"></iframe>
                                             <br><br>
                                             <h4 style="color:#800000">{{ $dt->judul }}</h4>
                                         </div>
@@ -292,44 +298,48 @@
             <div class="biaya_pendaftaran">
                 <h2 style="font-weight: 600">Biaya Pendaftaran</h2>
                 <br>
-                <table class="table table-bordered text-center" style="font-size: 30px; table-layout: fixed;">
-                    <thead style="background-color:#800000;">
-                        <tr>
-                            <th class="text-white" style="background-color:#800000;">Program</th>
-                            <th class="text-white" style="background-color:#800000;">Besaran Biaya Pendaftaran</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($biayapendaftaran as $data)
-                        <tr>
-                            <td>{{ $data->program }} - Sarjana</td>
-                            <td>Rp {{ format_uang($data->biayapendaftaran) }}</td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-            <br><br>
-            <div class="biaya_perkuliahan">
-                    <h2 style="font-weight: 600">Biaya Perkuliahan</h2>
-                    <table class="table table-bordered text-center" style="font-size: 30px; table-layout: fixed;">
-                        <thead>
+                <div class="table-responsive-sm">
+                    <table class="table table-bordered text-center">
+                        <thead style="background-color:#800000;">
                             <tr>
-                                <th class="text-white" style="background-color:#800000;">Program</th>
-                                <th class="text-white" style="background-color:#800000;">Besaran Biaya Pendidikan</th>
-                                <th class="text-white" style="background-color:#800000;">Biaya Rekognisi / SKS</th>
+                                <th class="text-white align-middle" style="background-color:#800000; text-align:center;">Program</th>
+                                <th class="text-white" style="background-color:#800000;">Besaran Biaya Pendaftaran</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($biayaperkuliahan as $data)
+                            @foreach ($biayapendaftaran as $data)
                             <tr>
-                                <td>{{ $data->program }}</td>
-                                <td>Rp {{ format_uang($data->biayapendidikan) }}</td>
-                                <td>Rp {{ format_uang($data->biayarekognisi) }}</td>
+                                <td>{{ $data->program }} - Sarjana</td>
+                                <td>Rp {{ format_uang($data->biayapendaftaran) }}</td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
+                </div>
+            </div>
+            <br><br>
+            <div class="biaya_perkuliahan">
+                    <h2 style="font-weight: 600">Biaya Perkuliahan</h2>
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th class="text-white align-middle" style="background-color:#800000;">Program</th>
+                                    <th class="text-white" style="background-color:#800000;">Besaran Biaya Pendidikan</th>
+                                    <th class="text-white" style="background-color:#800000;">Biaya Rekognisi / SKS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($biayaperkuliahan as $data)
+                                <tr>
+                                    <td>{{ $data->program }}</td>
+                                    <td>Rp {{ format_uang($data->biayapendidikan) }}</td>
+                                    <td>Rp {{ format_uang($data->biayarekognisi) }}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
             </div>
         </div>
     </section>

@@ -146,9 +146,11 @@ class FrontendController extends Controller
         $biayapendaftaran = RPLBiayaPendaftaran::all();
         $biayaperkuliahan = RPLBiayaPerkuliahan::all();
         $slider = RPLSlider::where('judul','like',"%alur-pendaftaran%")->get();
+        $sliderbrosur = RPLSlider::where('judul','like',"%brosur%")->get();
         $dokumen = RPLDokumen::all();
         return view('user.rpl.index', [
             'slider'        => $slider,
+            'sliderbrosur' => $sliderbrosur,
             'dokumen'        => $dokumen,
             'biayapendaftaran' => $biayapendaftaran,
             'biayaperkuliahan' => $biayaperkuliahan,
