@@ -138,6 +138,23 @@
         </div>
     </section><!-- End About Section -->
 
+    <section id="tatacara-pendaftaran" class="about mt-5">
+        <div class="container">
+
+            <div class="row" data-aos="fade-up">
+                <div class="section-title">
+                    <p style="color:#2f3542">Tata Cara Pembayaran Perkuliahan</p>
+                </div>
+
+                <div class="col-lg-12 col-md-12">
+                    <iframe style="width: 100%;" height="700" src="https://www.youtube.com/embed/PvgmVRC5gBQ?si=NTT0RAcsmKatWu0t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
 
     <!-- ======= Trainers Section ======= -->
     <section id="why-us" class="why-us">
