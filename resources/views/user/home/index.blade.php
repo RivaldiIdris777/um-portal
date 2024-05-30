@@ -6,20 +6,20 @@
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
         <div class="mt-4">
             <h1>Telah Dibuka !!<br><span style="color:red;">Pendaftaran Mahasiswa Baru Tahun 2024</span></h1>
-        <h2>Tata cara pendaftaran silahkan klik link dibawah</h2>
+            <h2>Tata cara pendaftaran silahkan klik link dibawah</h2>
         </div>
         <div class="row mt-3">
             <div class="col-md-5 text-center">
-                <a href="https://youtu.be/70CxG9-4Bjo">
-                    <img src="{{ asset('') }}carapmb.jpg" width="250" height="150" alt="" class="img-fluid">
+                <a href="https://youtu.be/70CxG9-4Bjo" target="_blank">
+                    <img src="{{ asset('') }}carapmb.png" width="450" height="450" alt="" class="img-fluid">
                 </a>
-                <a href="https://youtu.be/70CxG9-4Bjo" class="btn-get-started">Tata Cara Pendaftaran Mahasiswa Baru</a>
-            </div>qssw
+                <a href="https://youtu.be/70CxG9-4Bjo" target="_blank" class="btn-get-started">Tata Cara Pendaftaran Mahasiswa Baru</a>
+            </div>
             <div class="col-md-5 text-center">
-                <a href="https://youtu.be/PvgmVRC5gBQ">
-                    <img src="{{ asset('') }}caraspp.jpg" width="250" height="150" alt="" class="img-fluid">
+                <a href="https://youtu.be/PvgmVRC5gBQ" target="_blank">
+                    <img src="{{ asset('') }}bayarpmb.png" width="450" height="450" alt="" class="img-fluid">
                 </a>
-                <a href="https://youtu.be/PvgmVRC5gBQ" class="btn-get-started2">Tata Cara Pembayaran Perkuliahan</a>
+                <a href="https://youtu.be/PvgmVRC5gBQ" target="_blank" class="btn-get-started2">Tata Cara Pembayaran Perkuliahan</a>
             </div>
         </div>
     </div>
