@@ -4,10 +4,24 @@
 <section id="hero" class="d-flex justify-content-center align-items-center"
     style="background: url('{{ Storage::url('public/slider/').$slider->gambar }}') top center; background-size: cover; max-width:100%;">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Telah Dibuka !!<br><span style="color:red;">Pendaftaran Mahasiswa Baru Tahun 2024</span></h1>
+        <div class="mt-4">
+            <h1>Telah Dibuka !!<br><span style="color:red;">Pendaftaran Mahasiswa Baru Tahun 2024</span></h1>
         <h2>Tata cara pendaftaran silahkan klik link dibawah</h2>
-        <a href="https://youtu.be/70CxG9-4Bjo" class="btn-get-started">Tata Cara Pendaftaran Mahasiswa Baru</a>
-        <a href="https://youtu.be/PvgmVRC5gBQ" class="btn-get-started2">Tata Cara Pembayaran Perkuliahan</a>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-5 text-center">
+                <a href="https://youtu.be/70CxG9-4Bjo">
+                    <img src="{{ asset('') }}carapmb.jpg" width="250" height="150" alt="" class="img-fluid">
+                </a>
+                <a href="https://youtu.be/70CxG9-4Bjo" class="btn-get-started">Tata Cara Pendaftaran Mahasiswa Baru</a>
+            </div>
+            <div class="col-md-5 text-center">
+                <a href="https://youtu.be/PvgmVRC5gBQ">
+                    <img src="{{ asset('') }}caraspp.jpg" width="250" height="150" alt="" class="img-fluid">
+                </a>
+                <a href="https://youtu.be/PvgmVRC5gBQ" class="btn-get-started2">Tata Cara Pembayaran Perkuliahan</a>
+            </div>
+        </div>
     </div>
 </section><!-- End Hero -->
 
