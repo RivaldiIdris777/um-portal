@@ -14,7 +14,7 @@
                     <img src="{{ asset('') }}carapmb.jpg" width="250" height="150" alt="" class="img-fluid">
                 </a>
                 <a href="https://youtu.be/70CxG9-4Bjo" class="btn-get-started">Tata Cara Pendaftaran Mahasiswa Baru</a>
-            </div>
+            </div>qssw
             <div class="col-md-5 text-center">
                 <a href="https://youtu.be/PvgmVRC5gBQ">
                     <img src="{{ asset('') }}caraspp.jpg" width="250" height="150" alt="" class="img-fluid">
