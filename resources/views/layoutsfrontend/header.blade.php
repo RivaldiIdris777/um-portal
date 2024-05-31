@@ -65,6 +65,7 @@ $link = LinkDaftar::where('tujuan_url','like',"%Sarjana%")->first();
                     <li><a href="{{ url('home/rpl') }}">RPL &nbsp;<span></span><small class="text-danger fst-italic"> Baru</small></a></li>
                     <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
+                            <li><a href="{{ url('home/beasiswa') }}">Beasiswa</a></li>
                             <li><a href="{{ url('home/biayapendaftaran') }}">Biaya Pendaftaran</a></li>
                             <li><a href="{{ url('home/biayaperkuliahan') }}">Biaya Perkuliahan</a></li>
                             <li><a href="{{ url('home/syaratpendaftaran') }}">Syarat Pendaftaran</a></li>

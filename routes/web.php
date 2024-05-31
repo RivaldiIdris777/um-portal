@@ -8,6 +8,7 @@ use App\Http\Controllers\AkreditasiController;
 use App\Http\Controllers\KapasitasController;
 use App\Http\Controllers\JalurPendaftaranController;
 use App\Http\Controllers\ProfilLulusanController;
+use App\Http\Controllers\BeasiswaController;
 use App\Http\Controllers\BiayaPendaftaranController;
 use App\Http\Controllers\BiayaPerkuliahanController;
 use App\Http\Controllers\SyaratPendaftaranController;
@@ -64,6 +65,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 Route::get('/', [FrontendController::class, 'home'])->name('home');
 Route::get('home/alurpendaftaran', [FrontendController::class, 'alurpendaftaran'])->name('alurpendaftaran.user');
+Route::get('home/beasiswa', [FrontendController::class, 'beasiswa'])->name('beasiswa.user');
 Route::get('home/biayapendaftaran', [FrontendController::class, 'biayapendaftaran'])->name('biayapendaftaran.user');
 Route::get('home/biayaperkuliahan', [FrontendController::class, 'biayaperkuliahan'])->name('biayaperkuliahan.user');
 Route::get('home/syaratpendaftaran', [FrontendController::class, 'syaratpendaftaran'])->name('syaratpendaftaran.user');
