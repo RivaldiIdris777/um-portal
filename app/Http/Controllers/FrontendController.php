@@ -68,6 +68,11 @@ class FrontendController extends Controller
         return view('user.beasiswa.index');
     }
 
+    public function akreditasi()
+    {
+        return view('user.akreditasi.index');
+    }
+
     public function biayapendaftaran()
     {
         $biaya = BiayaPendaftaran::all();

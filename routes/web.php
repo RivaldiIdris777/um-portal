@@ -66,6 +66,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 Route::get('/', [FrontendController::class, 'home'])->name('home');
 Route::get('home/alurpendaftaran', [FrontendController::class, 'alurpendaftaran'])->name('alurpendaftaran.user');
 Route::get('home/beasiswa', [FrontendController::class, 'beasiswa'])->name('beasiswa.user');
+Route::get('home/akreditasi', [FrontendController::class, 'akreditasi'])->name('akreditasi.user');
 Route::get('home/biayapendaftaran', [FrontendController::class, 'biayapendaftaran'])->name('biayapendaftaran.user');
 Route::get('home/biayaperkuliahan', [FrontendController::class, 'biayaperkuliahan'])->name('biayaperkuliahan.user');
 Route::get('home/syaratpendaftaran', [FrontendController::class, 'syaratpendaftaran'])->name('syaratpendaftaran.user');
